@@ -1,6 +1,7 @@
 <script>
 	export let status;
-
+	export let error;
+	console.log(error)
 	const dev = process.env.NODE_ENV === 'development';
 
 </script>
@@ -25,6 +26,6 @@ h2{
 }
 </style>
 <main>
-<h1>{status} Error</h1>
+<h1>Error Code : {status}</h1>
 <h2><a href=".">Back to Homepage</a></h2>
 </main>
