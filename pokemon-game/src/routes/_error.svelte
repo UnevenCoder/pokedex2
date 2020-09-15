@@ -1,40 +1,30 @@
 <script>
 	export let status;
-	export let error;
 
 	const dev = process.env.NODE_ENV === 'development';
+
 </script>
-
 <style>
-	h1, p {
-		margin: 0 auto;
-	}
+main{
+	width:70vw;
+	height:80vh;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	margin-top:20vh;
+	flex-direction:column;
+}
+h1{
+	align-self:center;
+ font-size:5rem;
 
-	h1 {
-		font-size: 2.8em;
-		font-weight: 700;
-		margin: 0 0 0.5em 0;
-	}
-
-	p {
-		margin: 1em auto;
-	}
-
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
-		}
-	}
+}
+h2{
+	font-size:3rem;
+	align-self:center;
+}
 </style>
-
-<svelte:head>
-	<title>{status}</title>
-</svelte:head>
-
-<h1>{status}</h1>
-
-<p>{error.message}</p>
-
-{#if dev && error.stack}
-	<pre>{error.stack}</pre>
-{/if}
+<main>
+<h1>{status} Error</h1>
+<h2><a href=".">Back to Homepage</a></h2>
+</main>
