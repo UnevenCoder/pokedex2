@@ -17,7 +17,7 @@
   </script>
   
   <script>
-  import Stats from '../components/Stats.svelte';
+
   export let data;
 const keys = { 'electrode': 1    ,  'exeggcute': 2 , 'exeggutor': 3 ,
    'cubone': 4 ,        'marowak': 5 ,   'hitmonlee': 6 ,
@@ -64,15 +64,16 @@ const keys = { 'electrode': 1    ,  'exeggcute': 2 , 'exeggutor': 3 ,
   <div id='res'>
 
 {#each a as ind,i}
+<a href="/pokemon/{i+1}">
 <div class='card'>
 
-<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/{keys[ind.name]}.png' alt='' />
+<img  src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/{keys[ind.name]}.png' alt='' />
 <h1 >{ind.name}</h1>
 </div>
+</a>
 {/each}
 </div>
 
-<Stats name={data.results[0].name}/>
 
 
 

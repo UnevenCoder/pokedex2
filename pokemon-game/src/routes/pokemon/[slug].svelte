@@ -2,9 +2,9 @@
 	export async function preload({ params, query }) {
 		// the `slug` parameter is available because
 		// this file is called [slug].svelte
-		const res = await this.fetch(`blog/${params.slug}.json`);
+		const res = await this.fetch(`https://pokeapi.co/api/v2/pokemon/${params.slug}/`);
 		const data = await res.json();
-
+         
 		if (res.status === 200) {
 			return { post: data };
 		} else {
@@ -13,8 +13,10 @@
 	}
 </script>
 
-<script>
+<script>import { dataset_dev } from "svelte/internal";
+
 	export let post;
+	console.log(post)
 </script>
 
 <style>
@@ -51,14 +53,18 @@
 	.content :global(li) {
 		margin: 0 0 0.5em 0;
 	}
+	img{
+		height:500px;
+		width:500px;
+	}
 </style>
 
 <svelte:head>
-	<title>{post.title}</title>
+<title>{post.forms[0].name}</title>
 </svelte:head>
 
-<h1>{post.title}</h1>
-
+<h1>{post.forms[0].name}</h1>
+<img src={post.sprites.back_default} alt='' />
 <div class='content'>
-	{@html post.html}
+	{post}
 </div>
