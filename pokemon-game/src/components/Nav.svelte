@@ -14,10 +14,29 @@
     right: 0;
     z-index: 1;
     box-shadow: 0 2px 5px rgba(0,0,0,.26);
-	height:15vh;	}
+	height:15vh;	
+     display:flex;
+     align-items: center;
+     justify-content: center;
+     text-align:center;
+     }
+     svg{
+          align-self:flex-start;
+          margin-right:auto;
+          margin-top:17px;
+     }
+     h1 {
+    margin-top: 17px;
+    margin-right: auto;
+    font-size: 3em;
+     }
 </style>
 <header>
+     <svg width="2.5em" height="2.5em" viewBox="0 0 16 16" class="bi bi-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        </svg>
 
+       <h1> Pokedex </h1>
 </header>
 <!--
 <nav>

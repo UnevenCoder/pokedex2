@@ -14,6 +14,7 @@ main{
 	align-items: center;
 	margin-top:20vh;
 	flex-direction:column;
+	color:white;
 }
 h1{
 	align-self:center;
