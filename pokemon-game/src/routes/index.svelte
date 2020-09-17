@@ -88,14 +88,14 @@ border-radius:20px;
 box-shadow: 0 2px 5px rgba(0,0,0,.26);
 display:flex;
 flex-direction:column;
-justify-content: center;
+justify-content: space-evenly;
 align-items:center;
 text-align:center;
 }
 img{
 max-height:150px;
 max-width:150px;
-margin-top:-40px;
+margin-top: 35px;
 
 }
 a{

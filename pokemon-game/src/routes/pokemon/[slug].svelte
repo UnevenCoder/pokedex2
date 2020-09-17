@@ -254,7 +254,7 @@ abi.push(post.abilities[i].ability.name)
 	.content :global(li) {
 		margin: 0 0 0.5em 0;
 	}
-	:global(img){
+img{
 		transform: scale(2.5);
 		margin-bottom:auto;
 		margin-right:15vw;
@@ -309,6 +309,7 @@ abi.push(post.abilities[i].ability.name)
 	padding-top:30px;
 	margin-left:0;
 	padding-bottom:30px;
+
 }
 .sm{
 	display:flex;
