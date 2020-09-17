@@ -215,7 +215,7 @@ abi.push(post.abilities[i].ability.name)
 }
 .content{
 	margin-right:auto;
-	margin-left:50px;
+	margin-left:30px;
 }
 	/*
 		By default, CSS is locally scoped to the component,
@@ -249,9 +249,7 @@ abi.push(post.abilities[i].ability.name)
 		padding: 0;
 	}
 
-	.content :global(ul) {
-		line-height: 1.5;
-	}
+
 
 	.content :global(li) {
 		margin: 0 0 0.5em 0;
@@ -279,6 +277,89 @@ abi.push(post.abilities[i].ability.name)
 		background-color: white;
 
 	}
+	@media only screen and (max-width: 600px) {
+		
+		#main{
+		width:100vw;
+		height:100vh;
+		margin-left:0;
+		margin-right: 0;
+		margin-top:0;
+	}
+	:global(#top){
+		margin-left:auto;
+		margin-top:0;
+    height: 50px;
+    background-color: #ef5350;
+    width: 100vw;
+     }
+
+	#mid{
+	display: flex;
+  
+    width: 100%;
+    height: auto;
+    align-items: center;
+	margin-bottom:auto;
+	overflow:hidden;
+	justify-content:space-evenly;
+	flex-direction:column-reverse;
+}
+.content{
+	padding-top:30px;
+	margin-left:0;
+	padding-bottom:30px;
+}
+.sm{
+	display:flex;
+	width:350px;
+	justify-content:space-between
+}
+img{
+	padding-top:30px;
+}
+	}
+	@media only screen and (min-width: 800px) {
+		:global(.body){
+		margin:0;
+		display:flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}	
+
+  img{
+	transform: scale(3);
+		margin-bottom:auto;
+		margin-right:15vw;
+  }
+  .content{
+	margin-right:auto;
+	margin-left:60px;
+}
+}
+@media only screen and (min-width: 1000px) {
+  img{
+	transform: scale(3.5);
+		margin-bottom:auto;
+		margin-right:15vw;
+  }
+  .content{
+	margin-right:auto;
+	margin-left:90px;
+}
+}
+@media only screen and (min-width: 1200px) {
+  img{
+	transform: scale(4);
+		margin-bottom:auto;
+		margin-right:15vw;
+  }
+  .content{
+	margin-right:auto;
+	margin-left:100px;
+}
+}
 	/*.ngx-modal__close-btn {
     text-decoration: none;
 	margin-top:13vh;
