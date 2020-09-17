@@ -87,8 +87,8 @@ const keys = { 'electrode': 1    ,  'exeggcute': 2 , 'exeggutor': 3 ,
 
 <style>
 :global(.card){
-width:200px;
-height: 200px;
+width:250px;
+height: 250px;
 background-color:white;
 flex-wrap: wrap;
 margin-top:20px;
@@ -103,14 +103,19 @@ align-items:center;
 text-align:center;
 }
 img{
-height:150px;
-width:150px;
+height:125px;
+width:125px;
 margin-top:-40px;
 
+}
+a{
+  text-decoration: none;
 }
 h1{
 	align-self:center;
 	text-align:center;
+  text-decoration: none;
+  font-weight: 450;
 }
 #res{
 	width:100%;
