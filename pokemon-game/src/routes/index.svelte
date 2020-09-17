@@ -75,16 +75,6 @@ const keys = { 'electrode': 1    ,  'exeggcute': 2 , 'exeggutor': 3 ,
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
 <style>
 :global(.card){
 width:250px;
@@ -103,8 +93,8 @@ align-items:center;
 text-align:center;
 }
 img{
-height:125px;
-width:125px;
+max-height:150px;
+max-width:150px;
 margin-top:-40px;
 
 }
@@ -116,6 +106,7 @@ h1{
 	text-align:center;
   text-decoration: none;
   font-weight: 450;
+  top: 80px;
 }
 #res{
 	width:100%;
@@ -129,7 +120,7 @@ input{
   border:2px solid snow ;
   background-color:transparent;
   width:75vw;
-  height:30px;
+  height:60px;
 color:white;
 margin-right:12.5vw;
 margin-left:12.5vw;
@@ -140,6 +131,8 @@ margin-bottom:5vh;
 color:white;
 text-align:center;
 color:aquamarine;
+
+font-size: 2em;
 }
 
 </style>
