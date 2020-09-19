@@ -1,5 +1,5 @@
 <script>
-
+export let segment
 </script>
 
 <style>
@@ -20,33 +20,38 @@ header{
      justify-content: center;
      text-align:center;
      }
-     svg{
-          align-self:flex-start;
-          margin-right:auto;
-          margin-top:17px;
-     }
+
      h1 {
     margin-top: 17px;
     margin-right: auto;
     font-size: 3em;
      }
+     nav{
+
+          width:400px;
+       
+     }
+     ul{
+          display:flex;
+          width:100%;
+          justify-content:space-evenly;   
+          list-style: none;
+          font-size: large;
+          text-decoration:none;
+     }
 </style>
 <header>
-     <svg width="2.5em" height="2.5em" viewBox="0 0 16 16" class="bi bi-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-        </svg>
+
 
        <h1> Pokedex </h1>
-</header>
-<!--
+{#if segment != undefined}
 <nav>
 	<ul>
-		<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">home</a></li>
-		<li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">about</a></li>
+		<li><a aria-current="{segment === undefined ? 'home' : undefined}" href=".">Home</a></li>
 
 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-		     the blog data when we hover over the link or tap it on a touchscreen
-		<li><a rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">blog</a></li>
+		     the blog data when we hover over the link or tap it on a touchscreen-->
 	</ul>
 </nav>
--->
+{/if}
+</header>

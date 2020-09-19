@@ -16,7 +16,6 @@
 <script>
 import { prop_dev } from "svelte/internal";
 
-
 export let post;
 let arr=[]
 
@@ -142,10 +141,12 @@ abi.push(post.abilities[i].ability.name)
 <svelte:head>
 <title>{post.forms[0].name}</title>
 </svelte:head>
+
 <main id='main'>
-<div id='top'>
-	
-</div>
+	<ul>
+<li><a href=".">Home</a></li>
+	</ul>
+
 <div id='mid'>
 <div class='content'>
 	<h1>{post.name}</h1>
@@ -193,6 +194,10 @@ abi.push(post.abilities[i].ability.name)
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
+}
+ul{
+  margin-bottom:auto;
+  margin-top:3vh;
 }
 .sy
 	{
