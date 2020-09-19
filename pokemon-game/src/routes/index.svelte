@@ -38,7 +38,7 @@
   <div id='res'>
 
 {#each a as data,i}
-<a href="/pokemon/{i+1}">
+<a href="/pokemon/{data[1]}">
 <div class='card'>
 
 <img  src='{data[2]}' alt={data[0]} />
