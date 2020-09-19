@@ -43,7 +43,7 @@ header{
 <header>
 
 
-       <h1> Pokedex </h1>
+       <h1> Pokedex 2.0 </h1>
 {#if segment != undefined}
 <nav>
 	<ul>
