@@ -21,12 +21,9 @@ h1{
  font-size:5rem;
 
 }
-h2{
-	font-size:3rem;
-	align-self:center;
-}
+
 </style>
 <main>
 <h1>Error Code : {status}</h1>
-<h2><a href=".">Back to Homepage</a></h2>
+
 </main>

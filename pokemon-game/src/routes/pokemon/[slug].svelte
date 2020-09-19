@@ -143,10 +143,6 @@ abi.push(post.abilities[i].ability.name)
 </svelte:head>
 
 <main id='main'>
-	<ul>
-<li><a href=".">Home</a></li>
-	</ul>
-
 <div id='mid'>
 <div class='content'>
 	<h1>{post.name}</h1>
@@ -195,10 +191,7 @@ abi.push(post.abilities[i].ability.name)
     margin-inline-end: 0px;
     font-weight: bold;
 }
-ul{
-  margin-bottom:auto;
-  margin-top:3vh;
-}
+
 .sy
 	{
 	padding:4px;
@@ -322,7 +315,7 @@ img{
 	justify-content:space-between
 }
 img{
-	padding-top:30px;
+	margin-top:30px;
 }
 	}
 	@media only screen and (min-width: 800px) {
@@ -347,6 +340,7 @@ img{
 @media only screen and (min-width: 1000px) {
   img{
 	transform: scale(3.5);
+	margin-top:30px;
 		margin-bottom:auto;
 		margin-right:15vw;
   }
