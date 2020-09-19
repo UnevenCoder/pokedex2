@@ -41,7 +41,7 @@
 <a href="/pokemon/{data[1]}">
 <div class='card'>
 
-<img  src='{data[2]}' alt={data[0]} />
+<img  src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/{data[1]}.png' alt={data[0]} />
 <h1 >{data[0]}</h1>
 </div>
 </a>

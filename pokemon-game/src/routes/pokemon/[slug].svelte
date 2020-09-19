@@ -135,7 +135,7 @@ total+=post.stats[i].base_stat
   for(let i = 0;i<post.abilities.length;i++){
 abi.push(post.abilities[i].ability.name)
   }
-  
+
 </script>
 
 <svelte:head>
@@ -315,6 +315,7 @@ img{
 	justify-content:space-between
 }
 img{
+	transform: scale(0.75);
 	margin-top:30px;
 }
 	}
@@ -328,7 +329,8 @@ img{
 	}	
 
   img{
-	transform: scale(3);
+	transform: scale(1.5);
+	margin-top:50px;
 		margin-bottom:auto;
 		margin-right:15vw;
   }
@@ -339,8 +341,8 @@ img{
 }
 @media only screen and (min-width: 1000px) {
   img{
-	transform: scale(3.5);
-	margin-top:30px;
+	transform: scale(2);
+	margin-top:100px;
 		margin-bottom:auto;
 		margin-right:15vw;
   }
@@ -351,7 +353,7 @@ img{
 }
 @media only screen and (min-width: 1200px) {
   img{
-	transform: scale(4);
+	margin-top:75px;
 		margin-bottom:auto;
 		margin-right:15vw;
   }
